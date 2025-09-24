@@ -1,0 +1,37 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+select, button {
+  margin: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+
+.chart-wrap {
+  width: min(1100px, 95vw);
+  height: 500px;            
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+
+.chart-wrap canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.alerta {
+  margin-top: 15px;
+  font-weight: bold;
+  color: red;
+}

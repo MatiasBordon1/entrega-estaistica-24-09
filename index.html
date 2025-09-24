@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gráfico de Control</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Gráfico de Control de Variables</h1>
+
+  <label for="caso">Seleccionar Caso:</label>
+  <select id="caso">
+    <option value="1">Caso 1 - Fuera de control</option>
+    <option value="2">Caso 2 - Normal</option>
+    <option value="3">Caso 3 - Tendencia 2 de 3 fuera de 2σ</option>
+    <option value="4">Caso 4 - Tendencia 4 de 5 fuera de σ</option>
+    <option value="5">Caso 5 - 8 puntos del mismo lado de la media</option>
+  </select>
+
+  <button id="btn-cargar">Cargar Datos</button>
+
+  <div id="alerta" class="alerta"></div>
+
+  
+  <div class="chart-wrap">
+    <canvas id="grafico"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
